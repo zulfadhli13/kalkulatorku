@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="judul-header">
+      <h2 class="katik">KATIK Kalkulator Matematik</h2>
+      <nav class="navbar">
+        <a href="#persegi-panjang">Persegi Panjang</a>
+        <a href="#persegi">Persegi</a>
+        <a href="#home">Home</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h2>Welcome to Katik</h2>
+        <h5>Hai Sobat, Selamat Datang Di Katik :)</h5>
+        <p>Sebuah web app sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, illo quis! Aspernatur accusantium ea suscipit, provident quis earum itaque ex totam culpa? Voluptate, et nulla! Saepe totam quia natus possimus?</p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi provident quibusdam cumque laudantium minima velit quaerat voluptatem nobis tenetur aliquid itaque ipsa sapiente vitae unde alias, ipsam, doloremque, repellat soluta?
+        </p>
+      </section>
+
+      <section id="persegi">
+        <section id="container1">
+          <h2>- PERSEGI -</h2>
+          <h2 class="luas-persegi">Luas Persegi</h2>
+          <img src="img/persegi.png" alt="persegi" />
+          <p>Rumus Luas Persegi Yaitu :</p>
+          <p>L = S x S</p>
+
+          <p>Rumus Keliling Persegi Yaitu :</p>
+          <p>K = 4 x S</p>
+
+          <ul class="keterangan">
+            <li type="none">Dimana :</li>
+            <li>L = Luas</li>
+            <li>S = Sisi</li>
+            <li>K = Keliling</li>
+          </ul>
+        </section>
+
+        <section id="container2">
+          <h2>Hitung Luas Persegi</h2>
+          <form action="reset" id="kalkulatorForm">
+            <label for="sisi">Nilai Sisi:</label>
+            <input type="number" id="sisi" placeholder="Masukkan nilai sisi" />
+          </form>
+
+          <button onclick="hitung()" id="hitung">Hitung</button>
+
+          <div id="hasil">
+            <h2>Hasil</h2>
+            <p>Luas Persegi = <span id="luas">...</span> satuan luas</p>
+            <p>Keliling Persegi = <span id="keliling">...</span> satuan panjang</p>
+          </div>
+          <button id="reset" type="reset" onclick="resetForm()">Reset</button>
+        </section>
+      </section>
+
+      <section id="persegi-panjang">
+        <h2>- PERSEGI PANJANG -</h2>
+        <section id="container3">
+          <h2 class="luas-persegi-panjang">Luas Persegi Panjang</h2>
+          <img src="img/persegi-panjang.png" alt="persegi-panjang" />
+          <p>Rumus Luas Persegi Panjang Yaitu :</p>
+          <p>L = p x l</p>
+
+          <p>Rumus Keliling Persegi Yaitu :</p>
+          <p>K = 2 x (p + l)</p>
+
+          <ul class="keterangan">
+            <li type="none">Dimana :</li>
+            <li>L = luas</li>
+            <li>S = sisi</li>
+            <li>K = keliling</li>
+            <li>p = panjang</li>
+            <li>l = lebar</li>
+          </ul>
+        </section>
+
+        <section id="container4">
+          <h2>Hitung Luas Persegi Panjang</h2>
+          <form action="reset" id="kalkulatorFormPP">
+            <label for="panjang">Nilai Panjang :</label>
+            <input type="number" id="panjang" placeholder="Masukkan nilai panjang" />
+
+            <label for="lebar">Nilai Lebar :</label>
+            <input type="number" id="lebar" placeholder="Masukkan nilai lebar" />
+          </form>
+
+          <button onclick="hitungPersegiPanjang()" id="hitungPersegiPanjang">Hitung</button>
+
+          <div id="hasil">
+            <h2>Hasil</h2>
+            <p>Luas Persegi Panjang = <span id="luasPersegiPanjang">...</span> satuan luas</p>
+            <p>Keliling Persegi Panjang = <span id="kelilingPersegiPanjang">...</span> satuan panjang</p>
+          </div>
+          <button id="reset" type="reset" onclick="reset()">Reset</button>
+        </section>
+      </section>
+
+      <footer>
+        <h2>KATIK Kalkulator Matematik</h2>
+        <p class="saran">
+          Mohon maaf jika dalam tugas aplikasi Katik yang telah saya buat ini masih banyak kekurangan dari segi fungsi dan tampilan, saya meminta saran agar kedepannya aplikasi ini dapat saya kembangkan menjadi lebih baik lagi :)
+        </p>
+        <button class="scrolltotop" onclick="scrollToTop()" target="#home">^</button>
+        <span class="created-by">Created By Zulfadhli Jamaluddin | 2024 All rights reserved</span>
+      </footer>
+    </main>
+  </body>
+</html>
