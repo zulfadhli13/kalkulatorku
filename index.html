@@ -5,28 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="js/script.js"></script>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand fs-4 fw-bold text-dark ms-4">Zulfadhli J</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav ms-auto fw-semibold">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#persegi">Persegi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#persegi-panjang">Persegi Panjang</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <header class="judul-header">
       <h2 class="katik">KATIK Kalkulator Matematik</h2>
-      <nav class="navbar">
-        <a href="#persegi-panjang">Persegi Panjang</a>
-        <a href="#persegi">Persegi</a>
-        <a href="#home">Home</a>
-      </nav>
     </header>
 
     <main>
       <section id="home">
         <h2>Welcome to Katik</h2>
         <h5>Hai Sobat, Selamat Datang Di Katik :)</h5>
-        <p>Sebuah web app sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, illo quis! Aspernatur accusantium ea suscipit, provident quis earum itaque ex totam culpa? Voluptate, et nulla! Saepe totam quia natus possimus?</p>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi provident quibusdam cumque laudantium minima velit quaerat voluptatem nobis tenetur aliquid itaque ipsa sapiente vitae unde alias, ipsam, doloremque, repellat soluta?
-        </p>
+        <p>Sebuah web app sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar.</p>
+        <p>Dengan web app ini dapat memudahkan pengguna dalam menghitung luas dan keliling bangun datar seperti persegi dan persegi panjang.</p>
+        <p>Kedepannya juga web app ini akan di tambahkan kalkulator untuk menghitung pembagian, perkalian, penjumlahan, pengurangan dll. Guna membantu pengguna dalam perhitungan secara cepat.</p>
       </section>
 
       <section id="persegi">
@@ -49,19 +64,20 @@
         </section>
 
         <section id="container2">
-          <h2>Hitung Luas Persegi</h2>
           <form action="reset" id="kalkulatorForm">
-            <label for="sisi">Nilai Sisi:</label>
+            <h2>Hitung Luas Persegi</h2>
+            <label for="sisi">Nilai Sisi :</label>
             <input type="number" id="sisi" placeholder="Masukkan nilai sisi" />
           </form>
 
-          <button onclick="hitung()" id="hitung">Hitung</button>
+          <button onclick="hitung()" id="hitungPersegi">Hitung</button>
 
           <div id="hasil">
             <h2>Hasil</h2>
             <p>Luas Persegi = <span id="luas">...</span> satuan luas</p>
             <p>Keliling Persegi = <span id="keliling">...</span> satuan panjang</p>
           </div>
+
           <button id="reset" type="reset" onclick="resetForm()">Reset</button>
         </section>
       </section>
@@ -111,11 +127,14 @@
       <footer>
         <h2>KATIK Kalkulator Matematik</h2>
         <p class="saran">
-          Mohon maaf jika dalam tugas aplikasi Katik yang telah saya buat ini masih banyak kekurangan dari segi fungsi dan tampilan, saya meminta saran agar kedepannya aplikasi ini dapat saya kembangkan menjadi lebih baik lagi :)
+          Dalam aplikasi Katik yang telah saya buat ini saya menyadari masih banyak kekurangan dari segi fungsi dan tampilan, saya meminta saran, pendapat dan masukan teman-teman sekalian untuk aplikasi ini agar kedepannya aplikasi ini
+          dapat saya kembangkan menjadi lebih baik lagi :)
         </p>
         <button class="scrolltotop" onclick="scrollToTop()" target="#home">^</button>
         <span class="created-by">Created By Zulfadhli Jamaluddin | 2024 All rights reserved</span>
       </footer>
     </main>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

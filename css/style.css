@@ -2,14 +2,15 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth; /* efek scroll smooth*/
+  background-color: #0d1117;
 }
 
 .judul-header {
-  background-color: #1d3b53;
-  color: #fff;
+  background-color: #08c0c0;
+  color: white;
   text-align: center;
-  padding-top: 2px;
-  font-family: cursive;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navbar {
@@ -33,9 +34,17 @@ body {
   color: black;
 }
 
+main {
+  color: #f2f2f2;
+}
+
 #home p {
-  color: #333;
+  color: whitesmoke;
   padding: 0 30px;
+}
+
+#home h2 {
+  margin-top: 25px;
 }
 
 .katik {
@@ -58,15 +67,23 @@ body {
   text-align: center;
 }
 
+#container2 h2 {
+  padding-top: 25px;
+}
+
+#container4 h2 {
+  padding-top: 25px;
+}
+
 #container2,
 #container4 {
   border: 2px solid none;
   width: 50%;
   margin-left: 50vh;
-  padding-bottom: 30px;
-  padding-top: 3px;
+  padding-bottom: 40px;
+  padding-top: 40px;
   border-radius: 10px;
-  background-color: #eae2d6;
+  /* background-color: #eae2d6; */
 }
 
 img {
@@ -80,6 +97,10 @@ img {
   margin-bottom: 50px;
 }
 
+#persegi-panjang {
+  margin-top: 100px;
+}
+
 #container1 .luas-persegi {
   padding: 10px;
 }
@@ -91,6 +112,7 @@ img {
 
 label {
   margin-bottom: 10px;
+  margin-top: 10px;
   display: block;
 }
 
@@ -128,7 +150,7 @@ input {
 }
 
 /* button reset */
-#reset {
+/* #reset {
   padding: 8px 10px;
   font-size: 15px;
   cursor: pointer;
@@ -136,20 +158,21 @@ input {
   color: #fff;
   border: none;
   border-radius: 5px;
-}
+} */
 
 button:active {
   background-color: grey;
 }
 
 .scrolltotop {
-  float: right;
-  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   text-align: center;
   color: white;
-  padding: 2px 8px;
+  padding: 6px 12px;
   text-decoration: none;
-  background-color: #1d3b53;
+  background-color: #05aaaa;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -161,9 +184,9 @@ button:active {
 }
 
 footer {
-  background-color: #763626;
-  padding: 10px;
-  margin-top: 50px;
+  background-color: #005a6a;
+  padding: 10px 30px;
+  margin-top: 200px;
   color: goldenrod;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -179,6 +202,80 @@ footer {
   color: #90afc5;
   font-size: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* style neon form */
+
+#container {
+  text-align: center;
+  width: 50%;
+}
+
+#container2,
+#container4 {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 5px #00ffff;
+}
+
+#container2,
+#container4,
+#container4 h2 {
+  color: #00ffff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#container2 h2 {
+  color: #00ffff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#hasil {
+  text-transform: capitalize;
+}
+
+#container2 input[type='number'],
+#container4 input[type='number'],
+#container2 button,
+#container4 button {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  font-size: 16px;
+  outline: none;
+}
+
+#container2 input[type='number']:focus,
+#container4 input[type='number']:focus,
+#container4 button:focus {
+  box-shadow: 0 0 10px 2px #00ffff;
+}
+
+#container2 button:focus {
+  box-shadow: 0 0 10px 2px #00ffff;
+}
+
+#container2 button {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#container2 button:hover {
+  background-color: #00ffff;
+  color: #0d1117;
+}
+
+#container4 button:hover {
+  background-color: #00ffff;
+  color: #0d1117;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -206,6 +303,11 @@ footer {
     margin: 0;
   }
 
+  .katik {
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
   #container1 {
     margin-top: 35px;
   }
@@ -222,15 +324,29 @@ footer {
   #container2,
   #container4 {
     border: 2px solid none;
-    width: 50%;
+    width: 60%;
     margin-left: 70px;
     padding-bottom: 30px;
     padding-right: 20px;
     padding-left: 20px;
-    padding-top: 3px;
+    padding-top: 30px;
     border-radius: 10px;
-    background-color: #eae2d6;
+    background-color: rgba(255, 255, 255, 0.1);
   }
+
+  #container2 h2 {
+    font-size: large;
+  }
+
+  #container2,
+  #container4 label {
+    text-transform: capitalize;
+  }
+
+  #container4 h2 {
+    font-size: large;
+  }
+
   .keterangan {
     margin-left: 115px;
   }
